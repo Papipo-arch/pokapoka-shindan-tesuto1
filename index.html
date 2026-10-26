@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ポカポカ診断｜あなたにぴったりの湯、見つけませんか？</title>
+  <meta name="description" content="性格や気分から、あなたに合う銭湯とその周辺の楽しみ方を発見する診断（中間発表用デモ）">
+  <meta name="theme-color" content="#F08A3C">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23F08A3C'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-size='30' font-weight='800' fill='white'%3E%E3%82%86%3C/text%3E%3C/svg%3E">
+  <!-- フォント（ネットにつながらない場合は、パソコンに入っている丸ゴシックで表示されます） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div class="demo-ribbon">中間発表用デモ・施設情報は仮データです</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#/">
+        <span class="logo-mark">ゆ</span>
+        <span class="logo-text">ポカポカ診断</span>
+      </a>
+      <nav class="header-nav">
+        <a class="header-link" href="#/result">結果を見る</a>
+        <button class="btn btn-primary btn-sm" data-action="start">診断する</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" aria-live="polite">
+    <noscript><p style="padding:40px;text-align:center">このアプリを使うには JavaScript を有効にしてください。</p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-logo"><span class="logo-mark sm">ゆ</span>ポカポカ診断</p>
+      <p>活躍人材育成プログラム 中間発表用デモ</p>
+      <p class="footer-note">銭湯・周辺施設の名前や情報はすべて仮データです。実在の施設とは関係ありません。<br>診断結果は楽しむためのものです。</p>
+    </div>
+  </footer>
+
+  <div id="modal-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- データ（ここを編集すると質問・タイプ・銭湯・スポットを変えられます） -->
+  <script src="js/data/questions.js"></script>
+  <script src="js/data/types.js"></script>
+  <script src="js/data/sentos.js"></script>
+  <script src="js/data/spots.js"></script>
+  <!-- 計算・見た目・画面 -->
+  <script src="js/scoring.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/share.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
